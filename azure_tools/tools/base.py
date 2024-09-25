@@ -7,7 +7,7 @@ AZURE_ICON_URL = "https://azure.microsoft.com/svghandler/azure-logo/?width=300&h
 # details
 SCRIPT_LOGIN   = """
 az extension add --name azure-devops
-az devops login --organization $AZURE_DEVOPS_ORG_URL
+echo $AZURE_DEVOPS_PAT | az devops login --organization $AZURE_DEVOPS_ORG_URL
 az devops configure --defaults organization=$AZURE_DEVOPS_ORG_URL
 """
 
