@@ -5,10 +5,11 @@ AZURE_ICON_URL = "https://azure.microsoft.com/svghandler/azure-logo/?width=300&h
 
 # View https://learn.microsoft.com/en-us/azure/devops/cli/?view=azure-devops for Azure DevOps
 # details
-SCRIPT_LOGIN   = """
+SCRIPT_LOGIN = """
 az extension add --name azure-devops
 echo $AZURE_DEVOPS_PAT | az devops login --organization $AZURE_DEVOPS_ORG_URL
 az devops configure --defaults organization=$AZURE_DEVOPS_ORG_URL
+az devops configure --defaults project=$AZURE_DEVOPS_PROJECT
 """
 
 class AzureCliTool(Tool):
