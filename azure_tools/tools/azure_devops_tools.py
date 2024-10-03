@@ -113,7 +113,7 @@ az_boards = AzureCliTool(
 
         Commands:
         - query     : Query for a list of work items.
-        """,
+        """),
     content="az boards {{ .command}}",
     args=[
         Arg(name="command",
