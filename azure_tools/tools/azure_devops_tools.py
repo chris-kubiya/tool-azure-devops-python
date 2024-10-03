@@ -5,7 +5,6 @@ from kubiya_sdk.tools.registry import tool_registry
 az_devops = AzureCliTool(
     name="az_devops",
     description=("""
-        Logs in to Azure DevOps CLI and then runs the specified `devops` group command.
         Use the command flag `--help` when needed to determine the correct command to use.
         
         Group:
@@ -36,7 +35,6 @@ az_devops = AzureCliTool(
 az_pipelines = AzureCliTool(
     name="az_pipelines",
     description=("""
-        Logs in to Azure DevOps CLI and then runs the specified `pipelines` group command.
         Use the command flag `--help` when needed to determine the correct command to use.
         
         Group:
@@ -76,7 +74,6 @@ az_pipelines = AzureCliTool(
 az_artifacts = AzureCliTool(
     name="az_artifacts",
     description="""
-        Logs in to Azure DevOps CLI and then runs the specified `artifacts` group command.
         Use the command flag `--help` when needed to determine the correct command to use.
 
         Group:
@@ -100,7 +97,6 @@ az_artifacts = AzureCliTool(
 az_boards = AzureCliTool(
     name="az_boards",
     description=("""
-        Logs in to Azure DevOps CLI and then runs the specified `boards` group command.
         Use the command flag `--help` when needed to determine the correct command to use.
 
         Group:
@@ -129,7 +125,6 @@ az_boards = AzureCliTool(
 az_repos = AzureCliTool(
     name="az_repos",
     description=("""
-        Logs in to Azure DevOps CLI and then runs the specified `repos` group command.
         Use the command flag `--help` when needed to determine the correct command to use.
 
         Group:
